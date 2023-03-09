@@ -25,7 +25,7 @@ def flags():
 sourcePath=flags().source
 destinationPath=flags().destination
 logs=os.path.join(flags().log,"logs.txt")
-timeout=flags().timeout
+timeout=flags().timeout*60
 
 # Get time
 def timestmp():
